@@ -1,7 +1,7 @@
 [project]
 name = "rfbbp"
 version = "0.1.0"
-description = "Add your description here"
+description = "Bayesian correction for center-specific biomarker measurement relationships in survival analysis"
 readme = "README.md"
 authors = [
     { name = "SongJialiJiali", email = "1654934562@qq.com" }
@@ -19,9 +19,6 @@ dependencies = [
     "statsmodels>=0.14.6",
     "tqdm>=4.67.3",
 ]
-
-[project.scripts]
-rfbbp = "rfbbp:main"
 
 [build-system]
 requires = ["uv_build>=0.8.18,<0.9.0"]
