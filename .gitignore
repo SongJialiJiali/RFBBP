@@ -1,0 +1,42 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv/
+
+# Jupyter and local runtime state
+.ipynb_checkpoints/
+*.log
+
+# Simulation outputs (the simulation source files remain public)
+experiment/scenario*
+
+# Credentialed MIMIC-IV/eICU source data and local data archives
+case_multivar/data*
+
+# Legacy/intermediate case-analysis workspaces
+case_multivar/analysis_simple
+
+# Final case-analysis outputs are derived from credentialed patient-level data
+# and are private by default. Keep only the two source-code artifacts currently
+# stored in this directory; if they are moved to case_multivar/, the exceptions
+# below can be removed and analysis_final/ can be ignored wholesale.
+case_multivar/analysis_final/*
+!case_multivar/analysis_final/rfbbp_case_final.ipynb
+!case_multivar/analysis_final/rfbbp_helpers.py
+
+# Other local research/manuscript workspaces
+manuscript
+sepsis_review
+
+# Generated document and figure formats
+*.docx
+*.png
